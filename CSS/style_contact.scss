@@ -1,0 +1,142 @@
+@import "Mixin.scss";
+@import "main_style.scss";
+
+.content {
+  .information {
+    .title {
+      font-family: 'Ubuntu', sans-serif;
+      color: $bg-color-turquoise;
+      font-size: 40px;
+      margin-bottom: 40px;
+      @include max-screen(570px){
+        text-align: center;
+      }
+    }
+.detail{
+  justify-content: space-between;
+  @include max-screen(820px){
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @include max-screen(570px){
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .item {
+    font-family: "PT Sans", sans-serif;
+    color: #4e555b;
+    @include max-screen(820px){
+     margin-right: 40px;
+    }
+    @include max-screen(570px){
+      text-align: center;
+      margin-right: auto;
+
+    }
+  }
+  .footer-info-contact{
+    @include max-screen(670px){
+      margin-top: 20px;
+
+    }
+    @include max-screen(570px){
+      margin-top: 0;
+
+    }
+  }
+
+  .item:last-of-type{
+    @include max-screen(570px){
+      margin-bottom: 30px;
+
+    }
+  }
+  .links {
+
+    .item {
+      margin-left: 10px;
+      margin-bottom: 6px;
+      @include max-screen(820px){
+       margin-top: 20px;
+      }
+      @include max-screen(670px){
+        margin-top: 10px;
+
+      }
+      @include max-screen(570px){
+       margin-top: auto;
+
+      }
+
+    }
+
+    .item:last-of-type{
+      @include max-screen(570px){
+        margin-bottom: 30px;
+
+      }
+    }
+
+    a {
+      color: $bg-color-turquoise;
+      @include max-screen(570px) {
+        margin-left: 10px;
+        text-align: center;
+
+      }
+
+      i {
+        font-size: 30px;
+        margin-right: 10px;
+      }
+
+
+    }
+
+    a:nth-child(1) {
+      @include max-screen(570px) {
+        margin-left: 0;
+
+      }
+    }
+
+    a:nth-child(1):hover {
+      color: #4267B2;
+      opacity: 1;
+
+    }
+
+    a:nth-child(2):hover {
+      color: #00a0d0;
+      opacity: 1;
+    }
+
+    a:nth-child(3):hover {
+      color: #E1306C;
+      opacity: 1;
+    }
+
+
+  }
+}
+  .subtitle{
+    margin-top: 40px;
+    color: #292d32;
+    font-size: 30px;
+    font-family: "PT Sans", sans-serif;
+    margin-bottom: 20px;
+    @include max-screen(570px){
+      text-align: center;
+
+    }
+  }
+
+  iframe{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+
+
+  }
+}

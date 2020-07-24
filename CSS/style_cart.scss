@@ -1,0 +1,137 @@
+@import "Mixin.scss";
+@import "main_style.scss";
+
+.page {
+
+
+  .content {
+    .cart {
+      .cart-title {
+        border-bottom: 1px solid #c6c8ca;
+        margin-bottom: 20px;
+        @include max-screen(820px) {
+          display: none !important;
+        }
+
+        .item {
+          margin-left: 50px;
+          font-family: "PT Sans", sans-serif;
+          color: #4e555b;
+        }
+
+        .item:nth-child(1) {
+          margin-left: 0;
+        }
+      }
+
+      .more-details {
+        @include max-screen(820px) {
+          flex-direction: column;
+        }
+
+        .image {
+          @include max-screen(370px) {
+           flex-direction: column;
+          }
+          img {
+            width: 35%;
+            @include max-screen(370px) {
+              width: 75%;
+              margin:auto ;
+            }
+          }
+
+          .description {
+            padding-top: 55px;
+            padding-left: 31px;
+            @include max-screen(820px) {
+              flex-direction: column;
+              padding-top: 47px;
+            }
+            @include max-screen(570px) {
+              padding-top: 24px;
+            }
+
+            .title {
+              font-family: "PT Sans", sans-serif;
+              color: #4e555b;
+              font-size: 20px;
+              font-weight: 600;
+            }
+
+            p {
+              font-family: "PT Sans", sans-serif;
+              color: #4e555b;
+            }
+          }
+        }
+
+        .product-price {
+          padding-top: 100px;
+          text-align: right;
+          @include max-screen(820px) {
+            padding-top: 15px;
+            padding-bottom: 35px;
+            text-align: left;
+          }
+          @include max-screen(570px) {
+padding-top: 25px;
+            padding-bottom: 25px;
+            text-align: center;
+          }
+
+          .item {
+            color: #4e555b;
+            font-weight: 600;
+            font-size: 20px;
+            margin-left: 25px;
+            margin-top: 50px;
+          }
+
+          span:nth-child(2) {
+            margin-left: 5px;
+          }
+
+          .old-price {
+            text-decoration: line-through;
+            font-family: "PT Sans", sans-serif;
+            color: #4e555b;
+            font-weight: 600;
+            font-size: 15px;
+          }
+
+          input {
+            width: 20%;
+            margin-left: 30px;
+          }
+        }
+
+      }
+
+      .buttons {
+        margin-bottom: 60px;
+        @include max-screen(570px) {
+          margin-top: 10px;
+        }
+        @include max-screen(370px) {
+          flex-direction: column;
+        }
+
+        .btn {
+          background-color: $bg-color-turquoise;
+          @include max-screen(370px) {
+            width: 100%;
+          }
+
+          a {
+            color: #FFFFFF;
+            outline: none;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+
+  }
+}

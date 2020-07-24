@@ -1,0 +1,34 @@
+@import "Mixin.scss";
+@import "main_style.scss";
+
+.content{
+  .information{
+    .title{
+      color: $bg-color-turquoise;
+      font-size: 40px;
+      font-family: 'Ubuntu', sans-serif;
+      @include max-screen(570px){
+        text-align: center;
+      }
+    }
+    .paragraph{
+      color: #4e555b;
+      font-family: "PT Sans", sans-serif;
+    }
+    .list{
+      padding-left: 40px;
+      color: #4e555b;
+      font-family: "PT Sans", sans-serif;
+    }
+    .list-links{
+      padding-left: 40px;
+      font-family: "PT Sans", sans-serif;
+      margin-bottom: 50px;
+      a{
+        outline: none;
+        text-decoration: none;
+      }
+    }
+  }
+
+}
